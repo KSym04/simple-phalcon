@@ -1,3 +1,7 @@
+# Prevent Directory Listing
+Options -Indexes
+
+# Mod Rewrite To Public Directory
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteRule ^$ public/ [L]
